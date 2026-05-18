@@ -1,0 +1,755 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>高一先修加購方案｜MATHFLIX</title>
+  <meta name="description" content="你原本想買高一先修課程，但 MathFlix 讓你用更划算的方式，取得高中三年數學課程與高一先修加贈。" />
+
+  <!-- Facebook Pixel -->
+  <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '2143479962680226');
+    fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=2143479962680226&ev=PageView&noscript=1"
+  /></noscript>
+  <!-- End Facebook Pixel -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;700;900&family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet" />
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --navy:    #0d1b2a;
+      --navy2:   #162233;
+      --gold:    #f5a623;
+      --gold2:   #e8941a;
+      --cream:   #fdf6ec;
+      --text:    #1a1a2e;
+      --muted:   #6b7280;
+      --white:   #ffffff;
+      --radius:  12px;
+      --shadow:  0 8px 40px rgba(0,0,0,0.10);
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Noto Sans TC', sans-serif;
+      background: var(--cream);
+      color: var(--text);
+      line-height: 1.7;
+      overflow-x: hidden;
+    }
+
+    /* TOP BAR */
+    .topbar {
+      background: var(--navy);
+      color: var(--white);
+      text-align: center;
+      padding: 10px 20px;
+      font-size: 0.85rem;
+      letter-spacing: 0.04em;
+    }
+    .topbar span { color: var(--gold); font-weight: 700; }
+
+    /* HERO */
+    .hero {
+      background: var(--navy);
+      color: var(--white);
+      min-height: 88vh;
+      padding: 76px 20px 64px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+    }
+    .hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(ellipse at 50% 0%, rgba(245,166,35,0.13) 0%, transparent 68%);
+      pointer-events: none;
+    }
+    .hero-inner { max-width: 960px; margin: 0 auto; position: relative; z-index: 1; }
+
+    .hero-eyebrow {
+      display: inline-block;
+      background: var(--gold);
+      color: var(--navy);
+      font-size: 0.78rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      padding: 4px 14px;
+      border-radius: 99px;
+      margin-bottom: 20px;
+      text-transform: uppercase;
+    }
+
+    .hero h1 {
+      font-family: 'Noto Serif TC', serif;
+      font-size: clamp(2rem, 4.6vw, 3.2rem);
+      font-weight: 900;
+      line-height: 1.25;
+      margin-bottom: 20px;
+    }
+    .hero h1 em { color: var(--gold); font-style: normal; }
+
+    .hero-sub {
+      font-size: clamp(1rem, 2.5vw, 1.18rem);
+      color: rgba(255,255,255,0.78);
+      max-width: 660px;
+      margin: 0 auto 34px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 12px 28px;
+      border-radius: 8px;
+      font-size: 0.95rem;
+      font-weight: 700;
+      text-decoration: none;
+      cursor: pointer;
+      transition: filter 0.2s, transform 0.15s;
+      border: 0;
+    }
+    .btn:hover { filter: brightness(1.08); transform: translateY(-2px); }
+    .btn-gold { background: var(--gold); color: var(--navy); }
+    .btn-navy { background: var(--navy); color: var(--white); }
+    .btn-outline { background: transparent; color: var(--navy); border: 2px solid var(--navy); }
+    .btn-white { background: var(--white); color: var(--navy); }
+    .btn-full { width: 100%; text-align: center; }
+
+    /* SECTION WRAPPER */
+    section { padding: 72px 20px; }
+    .container { max-width: 860px; margin: 0 auto; }
+    .section-title {
+      font-family: 'Noto Serif TC', serif;
+      font-size: clamp(1.5rem, 3.5vw, 2.2rem);
+      font-weight: 900;
+      text-align: center;
+      margin-bottom: 12px;
+    }
+    .section-sub {
+      text-align: center;
+      color: var(--muted);
+      font-size: 1rem;
+      margin-bottom: 48px;
+    }
+
+    /* STORY */
+    .story { background: var(--cream); }
+    .story-copy {
+      max-width: 720px;
+      margin: 0 auto;
+      font-size: 1.06rem;
+      color: #383838;
+    }
+    .story-copy p + p { margin-top: 18px; }
+    .story-copy strong {
+      color: var(--navy);
+      font-weight: 900;
+    }
+    .story-callout {
+      margin-top: 30px;
+      padding: 24px;
+      background: var(--white);
+      border-left: 4px solid var(--gold);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      font-family: 'Noto Serif TC', serif;
+      font-size: 1.25rem;
+      font-weight: 900;
+      color: var(--navy);
+    }
+
+    /* INTRO */
+    .intro {
+      background: var(--navy2);
+      color: var(--white);
+    }
+    .intro .section-title { color: var(--white); }
+    .intro .section-sub { color: rgba(255,255,255,0.6); }
+    .intro-copy {
+      max-width: 720px;
+      margin: 0 auto 34px;
+      color: rgba(255,255,255,0.82);
+      font-size: 1.04rem;
+      text-align: center;
+    }
+    .intro-copy p + p { margin-top: 14px; }
+    .video-placeholder {
+      max-width: 760px;
+      aspect-ratio: 16 / 9;
+      margin: 0 auto;
+      border-radius: var(--radius);
+      border: 1px solid rgba(255,255,255,0.16);
+      background:
+        linear-gradient(rgba(13,27,42,0.28), rgba(13,27,42,0.6)),
+        url("https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/1l608kHgts7A2NPT8ksH/media/69116fdf75ec1e5fa548322a.png") center / cover;
+      box-shadow: 0 18px 60px rgba(0,0,0,0.28);
+      display: grid;
+      place-items: center;
+      overflow: hidden;
+    }
+    .video-placeholder iframe {
+      width: 100%;
+      height: 100%;
+      border: 0;
+      display: block;
+    }
+    .play-circle {
+      width: 82px;
+      height: 82px;
+      border-radius: 50%;
+      background: var(--gold);
+      color: var(--navy);
+      display: grid;
+      place-items: center;
+      font-size: 2.1rem;
+      font-weight: 900;
+      box-shadow: 0 12px 36px rgba(0,0,0,0.24);
+    }
+
+    /* OFFER */
+    .offer { background: var(--gold); padding-bottom: 42px; }
+    .offer .section-title { color: var(--navy); }
+    .offer .section-sub { color: rgba(13,27,42,0.76); }
+    .offer-list {
+      max-width: 760px;
+      margin: 0 auto 34px;
+      display: grid;
+      gap: 14px;
+    }
+    .offer-item {
+      background: var(--white);
+      border-radius: var(--radius);
+      padding: 18px 20px;
+      box-shadow: var(--shadow);
+      color: var(--text);
+      font-weight: 700;
+    }
+    .offer-item span { color: var(--gold2); margin-right: 8px; }
+    .pricing-grid {
+      max-width: 980px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 16px;
+    }
+    .price-card {
+      background: var(--white);
+      border-radius: var(--radius);
+      padding: 24px 20px;
+      text-align: center;
+      box-shadow: var(--shadow);
+      transition: transform 0.2s;
+    }
+    .price-card:hover { transform: translateY(-4px); }
+    .price-card.featured {
+      background: var(--navy);
+      color: var(--white);
+      position: relative;
+    }
+    .price-card.featured::before {
+      content: '90% 學生選這個';
+      position: absolute;
+      top: -12px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: var(--gold2);
+      color: var(--navy);
+      font-size: 0.72rem;
+      font-weight: 700;
+      padding: 3px 12px;
+      border-radius: 99px;
+      white-space: nowrap;
+    }
+    .price-label { font-size: 0.82rem; color: var(--muted); margin-bottom: 6px; font-weight: 500; }
+    .price-card.featured .price-label { color: rgba(255,255,255,0.65); }
+    .price-amount { font-size: 2rem; font-weight: 900; color: var(--navy); margin-bottom: 4px; }
+    .price-card.featured .price-amount { color: var(--gold); }
+    .price-period { font-size: 0.86rem; color: var(--muted); margin-bottom: 16px; min-height: 54px; }
+    .price-card.featured .price-period { color: rgba(255,255,255,0.62); }
+
+    /* PRE PAIN CTA */
+    .pre-pain-cta {
+      background: var(--navy);
+      padding: 64px 20px;
+      text-align: center;
+      color: var(--white);
+    }
+    .pre-pain-cta h2 {
+      font-family: 'Noto Serif TC', serif;
+      font-size: clamp(1.6rem, 4vw, 2.4rem);
+      font-weight: 900;
+      line-height: 1.35;
+      margin-bottom: 12px;
+    }
+    .pre-pain-cta p {
+      color: rgba(255,255,255,0.72);
+      margin-bottom: 28px;
+      font-size: 1rem;
+    }
+
+    /* PAIN POINTS */
+    .pain { background: var(--cream); }
+    .pain-intro {
+      text-align: center;
+      font-size: 1.1rem;
+      color: var(--muted);
+      margin-bottom: 48px;
+    }
+    .pain-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 24px;
+    }
+    .pain-card {
+      background: var(--white);
+      border-radius: var(--radius);
+      padding: 32px 24px;
+      border-left: 4px solid var(--gold);
+      box-shadow: var(--shadow);
+      transition: transform 0.2s;
+    }
+    .pain-card:hover { transform: translateY(-3px); }
+    .pain-num {
+      font-family: 'Noto Serif TC', serif;
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      color: var(--gold);
+      text-transform: uppercase;
+      margin-bottom: 10px;
+    }
+    .pain-title { font-size: 1.1rem; font-weight: 700; margin-bottom: 10px; }
+    .pain-body { font-size: 0.92rem; color: var(--muted); line-height: 1.65; }
+
+    /* TESTIMONIALS */
+    .testimonials { background: var(--navy); color: var(--white); }
+    .testimonials .section-title { color: var(--white); }
+    .testimonials .section-sub { color: rgba(255,255,255,0.5); }
+    .testi-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 24px;
+    }
+    .testi-card {
+      background: rgba(255,255,255,0.06);
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: var(--radius);
+      padding: 28px 24px;
+      transition: border-color 0.2s;
+    }
+    .testi-card:hover { border-color: var(--gold); }
+    .testi-quote {
+      font-size: 0.95rem;
+      line-height: 1.7;
+      color: rgba(255,255,255,0.85);
+      margin-bottom: 20px;
+      font-style: italic;
+    }
+    .testi-quote::before { content: '「'; color: var(--gold); font-size: 1.2rem; }
+    .testi-quote::after  { content: '」'; color: var(--gold); font-size: 1.2rem; }
+    .testi-name { font-weight: 700; font-size: 0.88rem; }
+    .testi-school { font-size: 0.8rem; color: rgba(255,255,255,0.45); margin-top: 2px; }
+
+    /* ABOUT */
+    .about { background: var(--cream); }
+    .about-grid {
+      display: grid;
+      grid-template-columns: 200px 1fr;
+      gap: 48px;
+      align-items: start;
+    }
+    @media (max-width: 600px) {
+      .about-grid { grid-template-columns: 1fr; text-align: center; }
+      .about-photo { margin: 0 auto; }
+      .about-badges { justify-content: center; }
+    }
+    .about-photo {
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid var(--gold);
+      box-shadow: var(--shadow);
+    }
+    .about-name {
+      font-family: 'Noto Serif TC', serif;
+      font-size: 1.8rem;
+      font-weight: 900;
+      margin-bottom: 8px;
+    }
+    .about-badges {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 16px;
+    }
+    .badge {
+      font-size: 0.78rem;
+      font-weight: 700;
+      padding: 4px 12px;
+      border-radius: 99px;
+      background: var(--navy);
+      color: var(--white);
+    }
+    .about-body { font-size: 0.95rem; color: #444; line-height: 1.8; }
+
+    /* FEATURES */
+    .features { background: var(--navy2); color: var(--white); }
+    .features .section-title { color: var(--white); }
+    .features .section-sub { color: rgba(255,255,255,0.5); }
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 24px;
+    }
+    .feat-card {
+      background: rgba(255,255,255,0.05);
+      border-radius: var(--radius);
+      padding: 28px 22px;
+      border-top: 3px solid var(--gold);
+    }
+    .feat-icon { font-size: 2rem; margin-bottom: 12px; }
+    .feat-title { font-weight: 700; font-size: 1rem; margin-bottom: 8px; }
+    .feat-body { font-size: 0.88rem; color: rgba(255,255,255,0.65); line-height: 1.65; }
+
+    /* FAQ */
+    .faq { background: var(--cream); }
+    .faq-list { max-width: 680px; margin: 0 auto; }
+    .faq-item {
+      border-bottom: 1px solid #e5e7eb;
+      padding: 20px 0;
+    }
+    .faq-q {
+      font-weight: 700;
+      font-size: 1rem;
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 12px;
+    }
+    .faq-q::after {
+      content: '+';
+      font-size: 1.4rem;
+      color: var(--gold);
+      flex-shrink: 0;
+      transition: transform 0.2s;
+    }
+    .faq-item.open .faq-q::after { transform: rotate(45deg); }
+    .faq-a {
+      font-size: 0.93rem;
+      color: var(--muted);
+      line-height: 1.75;
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s ease, padding 0.3s;
+    }
+    .faq-item.open .faq-a { max-height: 300px; padding-top: 12px; }
+
+    /* CTA FOOTER */
+    .cta-section {
+      background: var(--gold);
+      padding: 64px 20px;
+      text-align: center;
+    }
+    .cta-section h2 {
+      font-family: 'Noto Serif TC', serif;
+      font-size: clamp(1.6rem, 4vw, 2.4rem);
+      font-weight: 900;
+      color: var(--navy);
+      margin-bottom: 12px;
+    }
+    .cta-section p { color: var(--navy); opacity: 0.75; margin-bottom: 32px; font-size: 1rem; }
+    .cta-btns { display: flex; flex-wrap: wrap; gap: 14px; justify-content: center; }
+
+    /* FOOTER */
+    footer {
+      background: var(--navy);
+      color: rgba(255,255,255,0.4);
+      text-align: center;
+      padding: 24px 20px;
+      font-size: 0.8rem;
+    }
+
+    @media (max-width: 640px) {
+      .hero { min-height: 78vh; padding: 60px 18px 48px; }
+      section { padding: 58px 18px; }
+      .story-callout { font-size: 1.1rem; padding: 20px; }
+    }
+
+    /* ANIMATIONS */
+    .fade-in {
+      opacity: 0;
+      transform: translateY(24px);
+      transition: opacity 0.6s ease, transform 0.6s ease;
+    }
+    .fade-in.visible { opacity: 1; transform: translateY(0); }
+  </style>
+</head>
+<body>
+
+  <!-- TOP BAR -->
+  <div class="topbar">
+    先別急著結帳。看完這一頁，你可能會省下 <span>更多錢</span>。
+  </div>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-inner">
+      <span class="hero-eyebrow">高一先修加購提醒</span>
+      <h1>等一下別急著結帳。<br>看完這一頁，你可能會<em>省下更多錢</em>。</h1>
+      <p class="hero-sub">你來這裡是想買 $368 的高一先修課程。我完全懂——但今天我有一個更划算的方案要給你。</p>
+      <a href="#story" class="btn btn-gold" style="font-size:1.05rem; padding:16px 40px;">往下看 30 秒 ↓</a>
+    </div>
+  </section>
+
+  <!-- STORY / EPIPHANY BRIDGE -->
+  <section class="story" id="story">
+    <div class="container">
+      <h2 class="section-title fade-in">高中數學不是先修一次就解決</h2>
+      <div class="story-copy fade-in">
+        <p>我教高中數學將近20年，看過太多這種劇本：</p>
+        <p><strong>暑假狂補高一先修 → 開學第一次月考 90 分 → 高一下慢慢掉 → 高二開始崩 → 高三學測前才在哭。</strong></p>
+        <p>不是這些學生不努力。是他們搞錯了一件事：高中數學不是「先修一次就解決」的事。它是一場 3 年的長期戰。</p>
+        <p>你會在高二某個下午，發現你卡住的觀念，根源在高一某一章。你會在高三衝刺學測時，突然忘記算幾不等式的使用時機。</p>
+        <p>那一刻，你不需要「再買一次先修課」。</p>
+        <div class="story-callout">你需要的是——一個能讓你隨時回去看任何一個章節的家。</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- INTRO MATHFLIX -->
+  <section class="intro">
+    <div class="container">
+      <h2 class="section-title fade-in">所以三年前，我做了 MathFlix。</h2>
+      <p class="section-sub fade-in">數學界的 Netflix。</p>
+      <div class="intro-copy fade-in">
+        <p>高中三年所有課程，一個訂閱，無限看到飽。</p>
+        <p>不管你高一、高二、高三，不管凌晨兩點還是早上六點，所有的課都在那裡等你。</p>
+        <p>過去 3 年，2,500 位學生用 MathFlix 走過他們的高中數學。</p>
+      </div>
+      <div class="video-placeholder fade-in" aria-label="MathFlix 介紹影片">
+        <iframe
+          src="https://www.youtube.com/embed/vxykonBgVg4?si=m5PWLeWQxZQquFMI"
+          title="MathFlix 介紹影片"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+          loading="lazy"
+        ></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- OFFER -->
+  <section class="offer" id="plans">
+    <div class="container">
+      <h2 class="section-title fade-in">今天加入 MathFlix，你會拿到：</h2>
+      <div class="offer-list">
+        <div class="offer-item fade-in"><span>✅</span>MathFlix 完整訂閱：高一、高二、高三所有課程，無限次數看到飽</div>
+        <div class="offer-item fade-in" style="transition-delay:0.1s"><span>✅</span>高一先修課程（原價 $368，今天免費送你）</div>
+      </div>
+    </div>
+    <div class="pricing-grid">
+      <div class="price-card fade-in">
+        <p class="price-label">季卡</p>
+        <p class="price-amount">NT$1,990</p>
+        <p class="price-period">90 天無限看到飽 + $368 高一先修免費送</p>
+        <a href="https://learn.mathflix.tw/plans"
+           onclick="fbq('track','InitiateCheckout')"
+           class="btn btn-navy btn-full">立即訂閱季卡</a>
+      </div>
+      <div class="price-card featured fade-in" style="transition-delay:0.1s">
+        <p class="price-label">年卡</p>
+        <p class="price-amount">NT$4,950</p>
+        <p class="price-period">365 天無限看到飽 + $368 高一先修免費送。平均一個月只要 $412，一天不到 14 元</p>
+        <a href="https://learn.mathflix.tw/plans"
+           onclick="fbq('track','InitiateCheckout')"
+           class="btn btn-gold btn-full">立即訂閱年卡</a>
+      </div>
+      <div class="price-card fade-in" style="transition-delay:0.2s">
+        <p class="price-label">大滿貫方案｜365天</p>
+        <p class="price-amount">NT$12,888</p>
+        <p class="price-period">數學 + 高一基礎物理 + 基礎化學，一年無限觀看</p>
+        <a href="https://learn.mathflix.tw/plans/grand-year2026"
+           onclick="fbq('track','InitiateCheckout')"
+           class="btn btn-outline btn-full">立即訂閱大滿貫</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FINAL CTA BEFORE ORIGINAL CONTENT -->
+  <div class="pre-pain-cta">
+    <h2 class="fade-in">今天就加入的最大理由：</h2>
+    <p class="fade-in">7月1日開始，價格將調整為：<br>年卡：7,990元<br>季卡：2,990元<br>但是今天加入可終身鎖住舊價格唷！</p>
+    <a href="https://learn.mathflix.tw/courses/27"
+       onclick="fbq('track','InitiateCheckout')"
+       class="btn btn-gold" style="padding:16px 40px; font-size:1rem; max-width:680px; white-space:normal;">謝謝！我放棄優惠先購買高一先修課程就好</a>
+  </div>
+
+  <!-- TESTIMONIALS -->
+  <section class="testimonials">
+    <div class="container">
+      <h2 class="section-title fade-in">學員的見證，就是我們最好的代言</h2>
+      <p class="section-sub fade-in">真實學員回饋，沒有劇本</p>
+      <div class="testi-grid">
+        <div class="testi-card fade-in">
+          <img src="https://mf-sales.zeabur.app/3.png" alt="李同學" style="width:64px;height:64px;border-radius:50%;object-fit:cover;border:3px solid var(--gold);margin-bottom:14px;" />
+          <p class="testi-quote">建名老師都會先說明定理的來龍去脈，再搭配獨特的口訣幫助我記憶，讓我不再害怕數學。</p>
+          <p class="testi-name">李同學</p>
+          <p class="testi-school">忠明高中</p>
+        </div>
+        <div class="testi-card fade-in" style="transition-delay:0.1s">
+          <img src="https://mf-sales.zeabur.app/4.png" alt="謝O妤" style="width:64px;height:64px;border-radius:50%;object-fit:cover;border:3px solid var(--gold);margin-bottom:14px;" />
+          <p class="testi-quote">建名老師的講義真的超讚！不只題型整理完整，上課時善用提問法引導，讓我很快就可以解出答案。</p>
+          <p class="testi-name">謝O妤</p>
+          <p class="testi-school">台中女中</p>
+        </div>
+        <div class="testi-card fade-in" style="transition-delay:0.2s">
+          <img src="https://mf-sales.zeabur.app/5.png" alt="Kevin爸爸" style="width:64px;height:64px;border-radius:50%;object-fit:cover;border:3px solid var(--gold);margin-bottom:14px;" />
+          <p class="testi-quote">由於私校進度快，找不到適合的補習班，在親友推薦下加入 MATHFLIX。老師幽默風趣，不只學到數學，更學到許多讀書方法。</p>
+          <p class="testi-name">Kevin 爸爸</p>
+          <p class="testi-school">家長（明道高中）</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about">
+    <div class="container">
+      <h2 class="section-title fade-in">建名老師是誰？</h2>
+      <p class="section-sub fade-in">20 年教學經驗，親眼看過數千個學生的數學困境</p>
+      <div class="about-grid fade-in">
+        <div>
+          <img
+            src="https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/1l608kHgts7A2NPT8ksH/media/69118779d4d779a62b8e2f04.png"
+            alt="建名老師"
+            class="about-photo"
+            loading="lazy"
+          />
+        </div>
+        <div>
+          <h3 class="about-name">👋 Hi！我是建名老師</h3>
+          <div class="about-badges">
+            <span class="badge">合格教師證</span>
+            <span class="badge">YT 5萬訂閱</span>
+            <span class="badge">IG 2.5萬粉絲</span>
+            <span class="badge">中部補習班專任講師</span>
+          </div>
+          <p class="about-body">
+            我曾在公私立高中以及台中各大補習班教授高中數學。在教書的前幾年，我很納悶學生為什麼公式定理都背熟了，卻常常看到題目腦筋一片空白。我試過印更多考卷給他們練習，但結果還是一樣——這讓我感到挫折。
+          </p>
+          <p class="about-body" style="margin-top:12px;">
+            直到我發現「心智圖＋抓關鍵字」的方法，學生非常能理解，就算題目稍有變化也能迎刃而解。持續優化這套方法後，讓很多學生在段考與學測取得了好成績。
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURES -->
+  <section class="features">
+    <div class="container">
+      <h2 class="section-title fade-in">我從3個面向幫助你</h2>
+      <p class="section-sub fade-in">不只是影片課程，而是一套完整的學習系統</p>
+      <div class="features-grid">
+        <div class="feat-card fade-in">
+          <div class="feat-icon">🧠</div>
+          <h3 class="feat-title">清晰觀念解說</h3>
+          <p class="feat-body">搭配名校段考好題，用心智圖聯想法建立解題策略，讓你看到陌生題目不再空白。</p>
+        </div>
+        <div class="feat-card fade-in" style="transition-delay:0.1s">
+          <div class="feat-icon">📝</div>
+          <h3 class="feat-title">翰林題庫授權</h3>
+          <p class="feat-body">每次段考多達 500 題練習，分基礎與進階，依程度自由選擇，熟練各種考試題型。</p>
+        </div>
+        <div class="feat-card fade-in" style="transition-delay:0.2s">
+          <div class="feat-icon">💬</div>
+          <h3 class="feat-title">Discord 討論群</h3>
+          <p class="feat-body">匿名發問不尷尬，老師＋助教協助，跟一群優秀同學互相討論，教學相長。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="faq">
+    <div class="container">
+      <h2 class="section-title fade-in">常見問題</h2>
+      <p class="section-sub fade-in">一次解答你對 MATHFLIX 可能的所有疑問</p>
+      <div class="faq-list">
+        <div class="faq-item">
+          <div class="faq-q">訂閱制如何計費？</div>
+          <div class="faq-a">季卡 $1,990，90天內可無限次數觀看；年卡 $4,950，365天內可無限次數觀看。到期後不會自動續費，需自行再次訂閱。7月1號起將調整價格，6月30號前加入可終身鎖定舊價格唷！</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q">真的可以看到飽嗎？</div>
+          <div class="faq-a">是的！課程網頁裡所有數學課程，在會員期限內都可以無限次數觀看。去年有同學一年就把高一、高二學測範圍全部看完了。若想同時學習高一物理、化學課程，請購買數理大滿貫年卡方案。</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q">有紙本講義嗎？</div>
+          <div class="faq-a">數學課程每個單元都有 PDF 電子檔可以下載，你可以自行列印，也可以下載到 iPad 上作答。</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q">適合哪個年級？</div>
+          <div class="faq-a">高一到高三都適合。課程涵蓋高中三年的完整數學範圍，可以依照自己的學習進度超前學習，也可以回頭複習。</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q">如果課程有問題，可以得到解答嗎？</div>
+          <div class="faq-a">可以！訂閱後可加入專屬 Discord 討論群，匿名發問，由建名老師與助教協助解答，也有同學互相討論。</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2025 MATHFLIX · 建名老師 · 合格教師證（中等檢字9600208）</p>
+    <p style="margin-top:6px;">🔒 我們尊重你的隱私，不會共享你的資訊。</p>
+  </footer>
+
+  <script>
+    // FAQ accordion
+    document.querySelectorAll('.faq-item').forEach(item => {
+      item.querySelector('.faq-q').addEventListener('click', () => {
+        const isOpen = item.classList.contains('open');
+        document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
+        if (!isOpen) item.classList.add('open');
+      });
+    });
+
+    // Scroll fade-in
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+    }, { threshold: 0.12 });
+    document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+
+    // FB Pixel - scroll 50%
+    let fired50 = false;
+    window.addEventListener('scroll', () => {
+      if (!fired50 && window.scrollY / (document.body.scrollHeight - window.innerHeight) > 0.5) {
+        fired50 = true;
+        fbq('trackCustom', 'ScrolledHalfway');
+      }
+    });
+  </script>
+</body>
+</html>
