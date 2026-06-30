@@ -285,11 +285,10 @@
     .price-period { font-size: 0.86rem; color: var(--muted); margin-bottom: 16px; min-height: 54px; }
     .price-card.featured .price-period { color: rgba(255,255,255,0.62); }
 
-    /* PRE PAIN CTA */
+    /* VALUE PROOF */
     .pre-pain-cta {
       background: var(--navy);
-      padding: 64px 20px;
-      text-align: center;
+      padding: 72px 20px;
       color: var(--white);
     }
     .pre-pain-cta h2 {
@@ -297,12 +296,39 @@
       font-size: clamp(1.6rem, 4vw, 2.4rem);
       font-weight: 900;
       line-height: 1.35;
-      margin-bottom: 12px;
+      text-align: center;
+      margin-bottom: 36px;
     }
-    .pre-pain-cta p {
-      color: rgba(255,255,255,0.72);
-      margin-bottom: 28px;
+    .value-grid {
+      max-width: 860px;
+      margin: 0 auto;
+      display: grid;
+      gap: 22px;
+    }
+    .value-card {
+      background: rgba(255,255,255,0.06);
+      border: 1px solid rgba(255,255,255,0.1);
+      border-left: 4px solid var(--gold);
+      border-radius: var(--radius);
+      padding: 24px;
+    }
+    .value-card h3 {
+      color: var(--gold);
+      font-size: 1.16rem;
+      font-weight: 900;
+      margin-bottom: 14px;
+    }
+    .value-point + .value-point { margin-top: 16px; }
+    .value-point strong {
+      display: block;
+      color: var(--white);
       font-size: 1rem;
+      margin-bottom: 4px;
+    }
+    .value-point p {
+      color: rgba(255,255,255,0.7);
+      font-size: 0.94rem;
+      line-height: 1.75;
     }
 
     /* PAIN POINTS */
@@ -587,7 +613,7 @@
       <div class="price-card fade-in" style="transition-delay:0.2s">
         <p class="price-label">大滿貫方案｜365天</p>
         <p class="price-amount">NT$12,888</p>
-        <p class="price-period">三年數學 + 高一基礎物理 + 基礎化學，一年無限觀看</p>
+        <p class="price-period">三年數學課程 + 高一基礎物理 + 基礎化學，一年無限觀看</p>
         <a href="https://learn.mathflix.tw/plans/grand-year2026"
            onclick="fbq('track','InitiateCheckout')"
            class="btn btn-outline btn-full">立即訂閱大滿貫</a>
@@ -595,13 +621,59 @@
     </div>
   </section>
 
-  <!-- FINAL CTA BEFORE ORIGINAL CONTENT -->
+  <!-- VALUE PROOF -->
   <div class="pre-pain-cta">
-    <h2 class="fade-in">今天就加入的最大理由：</h2>
-    <p class="fade-in">7月1日開始，價格將調整為：<br>年卡：7,990元<br>季卡：2,990元<br>但是今天加入可終身鎖住舊價格唷！</p>
-    <a href="https://learn.mathflix.tw/courses/27"
-       onclick="fbq('track','InitiateCheckout')"
-       class="btn btn-gold" style="padding:16px 40px; font-size:1rem; max-width:680px; white-space:normal;">謝謝！我放棄優惠先購買高一先修課程就好</a>
+    <h2 class="fade-in">MathFlix 給孩子的，不只是一套課程</h2>
+    <div class="value-grid">
+      <div class="value-card fade-in">
+        <h3>🎯 孩子能做到什麼</h3>
+        <div class="value-point">
+          <strong>✅ 三年完整系統，從高一陪到學測</strong>
+          <p>每個觀念都有對應的影片、題目、解答。</p>
+        </div>
+        <div class="value-point">
+          <strong>✅ 名校段考題完整解說</strong>
+          <p>建中、北一女、台中一中、台中女中⋯⋯第一志願段考題你的孩子提前見過。考場上看到難題不會慌——他早就解過了。</p>
+        </div>
+      </div>
+      <div class="value-card fade-in" style="transition-delay:0.1s">
+        <h3>🎯 為什麼能做到</h3>
+        <div class="value-point">
+          <strong>✅ 2,500+ 位學員實證</strong>
+          <p>三年來，2,500 個學生用 MathFlix 走完高中數學。不是新平台、不是 Beta 版。</p>
+        </div>
+        <div class="value-point">
+          <strong>✅ 豐富練習題庫，不再買任何題本</strong>
+          <p>省下每年 1,000–2,000 元的參考書錢 + 逛書局比較的時間。題目、解答、影片，全部在同一個地方。</p>
+        </div>
+        <div class="value-point">
+          <strong>✅ Discord 討論群組＋ AI 輔助解題</strong>
+          <p>半夜也不怕問題卡關。</p>
+        </div>
+      </div>
+      <div class="value-card fade-in" style="transition-delay:0.2s">
+        <h3>🎯 不用等</h3>
+        <div class="value-point">
+          <strong>✅ 任意調整進度，配合孩子的節奏</strong>
+          <p>不用配合補習班開課時間。他的進度他決定。超前的可以衝，落後的可以補。</p>
+        </div>
+        <div class="value-point">
+          <strong>✅ 1.5x / 2x 加速，倒帶重看</strong>
+          <p>懂的地方快轉、不懂的地方重看。學習效率孩子自己控制。</p>
+        </div>
+        <div class="value-point">
+          <strong>✅ 手機、平板、電腦，隨時隨地</strong>
+          <p>通勤、午休、睡前都能學。不用接送、不用通勤、不用等開課。</p>
+        </div>
+      </div>
+      <div class="value-card fade-in" style="transition-delay:0.3s">
+        <h3>🎯 不用累</h3>
+        <div class="value-point">
+          <strong>✅ 20年經驗萃取精華講義</strong>
+          <p>不用整理筆記，你的孩子的時間應該花在「練題目」，不是「抄板書」。</p>
+        </div>
+      </div>
+    </div>
   </div>
 
   <!-- TESTIMONIALS -->
